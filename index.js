@@ -99,7 +99,7 @@ async function pegar_frase(entrada) {
   try {
     await axios.get(url);
   } catch (e) {
-    return false;
+    return undefined;
   }
   const { data } = await axios.get(url);
   const $ = cheerio.load(data);
@@ -116,13 +116,13 @@ async function pegar_frase(entrada) {
 app.get("/autor/:autorp", (req, res) => {
   autorP = req.params.autorp;
   function resposta(val) {
-    if (val != false) {
+    if (val != undefined) {
       res.json({
         autor: val.autor,
         frase: val.frase,
       });
     } else {
-      res.json("0");
+      res.json(false);
     }
   }
 
@@ -130,5 +130,5 @@ app.get("/autor/:autorp", (req, res) => {
 });
 
 app.listen(PORT, function () {
-  console.log(">>Servidor rodando na porta: " + PORT );
+  console.log(">>Servidor rodando na porta: " + PORT);
 });
