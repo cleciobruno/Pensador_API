@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 8877;
 function nome_autor(nome) {
   nome = nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   nome = nome.replace(/[\-]/g, "_");
-  nome = nome.replace(/[\W]/g, "_");
+  nome = nome.replace(/[\s]/g, "_");
+  nome = nome.replace(/[\W]/g, "");
   return nome;
 }
 
