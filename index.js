@@ -116,13 +116,13 @@ async function pegar_frase(entrada) {
 app.get("/autor/:autorp", (req, res) => {
   autorP = req.params.autorp;
   function resposta(val) {
-    if (val != "") {
+    if (val != false) {
       res.json({
         autor: val.autor,
         frase: val.frase,
       });
     } else {
-      res.json(false);
+      res.json("0");
     }
   }
 
