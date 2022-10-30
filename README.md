@@ -3,7 +3,7 @@
  <p align="center">API desenvolvida para pegar textos do site "<a href="https://pensador.com">Pensador.com<a>"</p>
  <br><h2>Como funciona:</h2>
  <p>A API funciona pegando frases de autores do site "<a href="https://pensador.com">Pensador.com<a/>" e retornando em <code>formato Json</code> o <code>autor</code> e a <code>frase</code>.</p>
- <img src="https://i.ibb.co/VJvSKST/albert.png" target="_blank">
+ <img src="autor.png" target="_blank">
 </div>
 <div>
  <br><h2>Para autor aleatório:</h2>
@@ -24,5 +24,5 @@
  </ul>
  <br><h2>Caso o autor não exista:</h2>
  <p>Caso o autor informado não exista, a API retornará <code>false</code>.</p>
- <img src="https://i.ibb.co/yhRKSW1/false2.png" target="_blank">
+ <img src="false.png" target="_blank">
 </div>
