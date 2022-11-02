@@ -98,12 +98,11 @@ async function pegar_frase(entrada) {
   const lista = [];
 
   try {
-    await axios.get(url);
+    var { data } = await axios.get(url);
+    var $ = cheerio.load(data);
   } catch (e) {
     return undefined;
   }
-  const { data } = await axios.get(url);
-  const $ = cheerio.load(data);
 
   $(".fr").each((i, elem) => {
     const frase = $(elem).text();
