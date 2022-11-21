@@ -9,12 +9,12 @@
  <br><h2>Para autor aleatório:</h2>
  <p>Basta escrever <code>a</code> de <code>aleatório</code> após o <code>/autor</code>.</p>
  <blockquote>
-  <a href="https://bruno-api-pensador.herokuapp.com/autor/a">https://bruno-api-pensador.herokuapp.com/autor/<code>a</code></a>
+  <a href="https://pensador-api.onrender.com/autor/a">https://pensador-api.onrender.com/autor/<code>a</code></a>
  </blockquote>
  <br><h2>Para autor determiando:</h2>
  <p>Basta escrever o <code>nome do autor</code> após o <code>/autor</code>, seguindo as <code>Regras do nome do autor</code>.</p>
  <blockquote>
-  <a href="https://bruno-api-pensador.herokuapp.com/autor/platao">https://bruno-api-pensador.herokuapp.com/autor/<code>platao</code></a>
+  <a href="https://pensador-api.onrender.com/autor/platao">https://pensador-api.onrender.com/autor/<code>platao</code></a>
  </blockquote>
  <br><h2>Regras do nome do autor:</h2>
  <ul>
